@@ -1,16 +1,16 @@
 ---
 title: "Lab 1 — Reproducible research with RMarkdown and Github"
-author: "Fill in your full name"
-date: "Date of lab session"
-documentclass: article
+author: "Ajay Kulkarni"
+date: "08/26/2018"
 geometry: margin=1in
 fontsize: 11pt
+documentclass: article
 output:
+  pdf_document:
+    highlight: tango
   html_document:
     highlight: tango
     self_contained: true
-  pdf_document:
-    highlight: tango
   github_document:
     html_preview: false
 ---
@@ -30,32 +30,73 @@ suppressPackageStartupMessages(library(tidyverse))
 ---
 
 ## Exercise 1
+Fill in your name and other information in the spaces at the top of the file if you haven’t already. Then, click the the “knit” icon just above the editing window (if a drop-down menu appears, choose “knit to HTML”). Based on the output that you see, explain what the ## and #### symbols are doing to the text.
 
-
-
+## Ajay Kulkarni
+#### CDS 102 - Fall 2018 (instructor)
 
 ## Exercise 2
 
+*What happens when you surround text with one-star pairs?*
 
+**What happens when you surround text with two-star pairs?**
+
+***What happens when you surround text with three-star pairs?***
+
+1.  Start typing this list. Note there are two spaces between the period and the word "Start".
+2.  Type the second line of the list
+1.  What happens if I type step 3 as another step 1?
+
+*   What does this star at the beginning do?
+*   Visually, it's similar to the numbered list.
+
+1.  What happens if we nest a list?
+    1.  Type four spaces, then type the number
+    2.  Did this do what you expected?
+2.  What if we contine the numbers this way?
+    *   What happens if we indent using stars?
+    *   Let's add another one for good measure.
+        *   Can we get another level of nesting?
+        
+[What does this do?](https://google.com)
+        
+![How is this different from the above?](test-image.jpeg)
 
 
 ## Exercise 3
 
+| Column 1 | Column 2 | Column 3 | Column 4 |
+| --- | ---: | :---: | :--- |
+| Notice | what | the | colons |
+| are | doing? | | |
 
+Table: The table with poor spacing
 
+| Column 1 | Column 2 | Column 3 | Column 4 |
+| -------- | -------: | :------: | :------- |
+| Notice   | what     | the      | colons   |
+| are      | doing?   |          |          |
+
+Table: The table with good spacing
 
 ## Exercise 4
 
-
-
+| Column 1 | Column 2 | Column 3 | Column 4 | Column 5 |
+| -------- | -------: | :------: | :------- | :------- |
+| Notice   | what     | the      | colons   | New      |
+| are      | doing?   |          |          | Row      |
 
 ## Exercise 5
 
-
+```{r}
+qplot(x = displ, y = hwy, data = mpg)
+```
 
 
 ## Exercise 6
 
 
-
+```{r}
+print(mpg)
+```
 
